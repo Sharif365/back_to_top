@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <section>SECTION 1</section>
+    <section>SECTION 2</section>
+    <section>SECTION 3</section>
+    <section>SECTION 4</section>
+    <section>SECTION 5</section>
+
+        <a class="back" href="#">Top</a>
+
+
+
+        <script>
+        const back = document.querySelector('.back')
+     
+        window.addEventListener('scroll', ()=>{
+            if(window.pageYOffset > 100){
+                back.classList.add('active')
+            }else{
+                back.classList.remove('active')
+            }
+        })
+        </script>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
